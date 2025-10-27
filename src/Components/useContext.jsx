@@ -104,3 +104,89 @@
 
 
 
+// import React, { createContext, useState } from "react";
+// export const UserContext = createContext();
+// export const UserProvider = ({ children }) => {
+//     const [userName, setUserName] = useState("Aysha");
+//     return (
+//         <UserContext.Provider value={{ userName, setUserName }}>
+//             {children}
+//         </UserContext.Provider>
+//     )
+// }
+
+
+
+// import React, { createContext, useState } from "react";
+// export const UserContext = createContext();
+// export const UserProvider = ({ children }) => {
+//     const [userName, setUserName] = useState("Dua");
+//     return (
+//         <UserContext.Provider value={{ userName, setUserName }}>
+//             {children}
+//         </UserContext.Provider>
+//     );
+// }
+
+
+
+
+// import React, { createContext, useContext, useState } from "react";
+// export const UserContext = createContext();
+// export const UserProvider = ({ children }) => {
+//     const[userName, setUserName] = useState("Sulthana");
+//     return (
+//         <UserContext.Provider value={{ userName, setUserName }}>
+//             {children}
+//         </UserContext.Provider>
+//     );
+// }
+
+
+
+
+// import React, { createContext, useState } from "react";
+// export const AuthContext = createContext();
+// export const AuthProvider = ({ children }) => {
+//     const [isLoggedIn, setIsLoggedIn] = useState(false);
+//     const login = () => setIsLoggedIn(true);
+//     const  logout = () => setIsLoggedIn(false);
+//     return (
+//         <AuthContext.Provider value={{ isLoggedIn, login, logout }}>
+//             {children}
+//         </AuthContext.Provider>
+//     );
+// }
+
+
+
+// import React, { createContext, useState } from "react";
+// export const MessageContext = createContext();
+// export const MessageProvider = ({ Children }) => {
+//     const [showMessage, setShowMessage] = useState(true);
+//     const toggleMessage = () => setShowMessage(!showMessage);
+//     return (
+//         <MessageContext.Provider value={{ showMessage, toggleMessage }}>
+//             {Children}
+//         </MessageContext.Provider>
+//     );
+// };
+
+
+// import React, { createContext, useState } from "react";
+// export const UserContext = createContext();
+// export const UserProvider = ({ children }) => {
+//     const [userName, setUserName] = useState("Sulthana");
+//     return (
+//         <UserContext.Provider value={{ userName, setUserName }}>
+//             {children}
+//         </UserContext.Provider>
+//     );
+// }
+
+
+
+
+
+
+

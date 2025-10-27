@@ -27,6 +27,38 @@
 // export default Counter;
 
 
+
+// import React, { useReducer } from "react";
+// const initialState = { count: 0 };
+// function reducer(state, action) {
+//     switch (action.type) {
+//         case "increment":
+//             return { count: state.count + action.payload };
+//         case "decrement":
+//             return { count: state.count - action.payload };
+//         case "reset":
+//             return initialState;
+//         default:
+//             return state;            
+//     }
+// }
+// function CounterApp() {
+//     const [state, dispatch] = useReducer(reducer, initialState);
+//     return (
+//         <div style={{ textAlign: "center", marginTop: "50px" }}>
+//             <h1>Count : {state.count}</h1>
+//             <button onClick={() => dispatch({ type: "increment", payload: 1 })}>+1</button>
+//             <button onClick={() => dispatch({ type: "decrement", payload: 1 })}>-1</button>
+//             <button onClick={() => dispatch({ type: "increment", payload: 5 })}>+5</button>
+//             <button onClick={() => dispatch({ type: "decrement", payload: 5 })}>-5</button>
+//             <button onClick={() => dispatch({ type: "reset" })}>Reset</button>
+//         </div>
+//     );
+// }
+// export default CounterApp;
+
+
+
 //   //-------------------------------Todo App-------------------------------------
 // import React, { useReducer, useState } from "react";
 // const initialState = [];
@@ -400,7 +432,7 @@
 //         setInput("");
 //     }
 //  function handleDelete(id) {
-//         dispatch({ type: "Delete-Todo", payload: id });
+//         dispatch({ type: "Delete_Todo", payload: id });
 //     }
 //     return (
 //         <div style={{ textAlign: "center", marginTop: "40px" }}>
@@ -423,6 +455,42 @@
 //     );
 // }
 // export default TodoApp;
+
+
+
+
+
+
+
+// import React, { useReducer, useState } from "react";
+// const initialState = "Enter Name"
+// const reducer = (state, action) => {
+//     switch(action) {
+//         case "name1":
+//             return state = "Sulthana";
+//         case "name2":
+//             return state = "Misriya";      
+//     };
+// };
+
+// function Name() {
+//     const [name, dispatch] = useReducer(reducer, initialState);
+//     return (
+//         <div>
+//             <div>Name : {name} </div>
+//             <button onClick={() => dispatch("name1")}>Sulthana</button>
+//             <button onClick={() => dispatch("name2")}>Misriya</button>
+//         </div>
+//     );
+// }
+// export default Name;
+
+
+
+
+
+
+
 
 
 

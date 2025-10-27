@@ -11,13 +11,12 @@
 // export default Timer;
 
 
+
 //------------------------------------Fetch API using useEffect----------------------------
 // import React, { useState, useEffect } from "react";
 //  function Users() {
 //     const [users, setUsers] = useState([]);
-// useEffect(() => {
-//     fetch("https://jsonplaceholder.typicode.com/users")
-//       .then((res) => res.json())
+// useEffect(() =>res.json())
 //       .then((data) => setUsers(data));
 // }, []);
 //  return (
@@ -68,7 +67,9 @@
 //       .catch((error) => {
 //         console.error("Error fetching posts:", error);
 //         setLoading(false);
-//       });
+//       }); {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//       .then((res) => 
 //    }, []);
 //     return  (
 //       <div style={{ padding: "20px" }}>
@@ -153,6 +154,25 @@
 //    ); 
 // }
 // export default ShowHide;
+
+
+
+
+// import React, { useEffect, useState } from "react";
+// function ShowHide() {
+//     const[show, setShow] = useState();
+//     useEffect(() => {
+//         console.log("Show state:", show);
+//     }, [show]);
+//     return (
+//         <div>
+//             <button onClick={() => setShow(!show)}>{show ? "Hide" : "Show"}</button>
+//              {show && <h2>Helloooo</h2>}
+//         </div>
+//     );
+// }
+// export default ShowHide;
+
 
 
 

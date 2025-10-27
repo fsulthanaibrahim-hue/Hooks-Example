@@ -151,3 +151,25 @@
 // }
 // export default ChatBox;
 
+
+// import React, { useState, useRef, useEffect } from "react";
+// function RenderCounter() {
+//     const [text, setText] = useState("");
+//     const renderCount = useRef(0);
+//     useEffect(() => {
+//         renderCount.current = renderCount.current + 1;
+//     });
+//     return (
+//         <div>
+//             <input
+//               type="text"
+//               value={text}
+//               onChange={(e) => setText(e.target.value)}
+//               placeholder="Type Something..."
+//               style={{ padding: "8px", width: "200px" }} 
+//             />
+//             <h3>Render Count : {renderCount.current}</h3>  
+//         </div>
+//     );
+// }
+// export default RenderCounter;

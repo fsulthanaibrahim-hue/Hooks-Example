@@ -127,7 +127,7 @@
 //         {!isLoggedIn && <button onClick={login}>Login</button>}
 //         {isLoggedIn && <button onClick={logout}>Logout</button>}
 //     </div>
-//    ); 
+//    );
 // };
 // function App() {
 //     return (
@@ -162,7 +162,7 @@
 // export default App;
 
 
-//   //------------------------------useContext with sow/hide---------------------------
+//   //------------------------------useContext with show/hide---------------------------
 // import React, { createContext, useContext, useState } from "react";
 // const ShowContext = createContext();
 // function App() {
@@ -428,88 +428,8 @@
 
 
 
-// import React from "react";
-// import ShowHide from "./Components/useContext";
-// function App() {
-//     return (
-//         <div>
-//             <ShowHide />
-//         </div>
-//     );
-// }
-// export default App;
 
 
-
-
-
-
-
-
-
-// import React, { useContext } from "react";
-// import { UserProvider, UserContext } from "./Components/useContext";
-// const Header = () => {
-//   const { userName } = useContext(UserContext);
-//   return <h2>Header: Welcome, {userName}!</h2>;
-// };
-// const Footer = () => {
-//   const { userName } =useContext(UserContext);
-//   return <h3>Footer: Logged in as {userName}</h3>;
-// };
-// const ChangeName = () => {
-//   const { userName, setUserName } = useContext(UserContext);
-//   return (
-//     <button onClick={() => setUserName(userName === "Sulthana" ? "Udaifa" : "Sulthana")}>
-//       Change User Name
-//     </button>
-//   );
-// };
-// function App() {
-//   return (
-//     <UserProvider>
-//       <div style={{ textAlign: "center", marginTop: "50px" }}>
-//         <Header />
-//         <ChangeName />
-//         <Footer />
-//       </div>
-//     </UserProvider>
-//   );
-// }
-// export default App;
-
-
-
-// import React, { useContext } from "react";
-// import { UserProvider, UserContext } from "./Components/useContext";
-// const Header = () => {
-//     const { userName } = useContext(UserContext);
-//     return <h2>Header: Welcome, {userName}!</h2>;
-// };
-// const Footer = () => {
-//     const { userName } = useContext(UserContext);
-//     return <h2>Footer: Logged in, {userName}</h2>
-// };
-// const ChangeName = () => {
-//     const { userName, setUserName } = useContext(UserContext);
-//     return (
-//         <button onClick={() => setUserName(userName === "Dua" ? "Mehak" : "Dua")}>
-//             Change Your Name
-//         </button>
-//     );
-// };
-// function App() {
-//     return (
-//         <UserProvider>
-//             <div>
-//                 <Header />
-//                 <ChangeName />
-//                 <Footer />
-//             </div>
-//         </UserProvider>
-//     );
-// }
-// export default App;
 
 
 
@@ -551,4 +471,138 @@
 
 
 
+// import React, { useContext } from "react";
+// import { UserProvider, UserContext } from "./Components/useContext";
+// const Header = () => {
+//     const {userName} = useContext(UserContext);
+//     return <h2>Welcome {userName}</h2>
+// };
+// const Footer = () => {
+//     const {userName} = useContext(UserContext);
+//     return <h2>Logged in {userName}</h2>
+// };
+// const ChangeName = () => {
+//     const {userName, setUserName} = useContext(UserContext);
+//     return (
+//         <button onClick={() => setUserName(userName === "Dua" ? "Mehak" : "Dua")}>
+//             Change Name
+//         </button>
+//     );
+// }
+// function App() {
+//     return (
+//         <UserProvider>
+//             <div>
+//                 <Header />
+//                 <ChangeName />
+//                 <Footer />
+//             </div>
+//         </UserProvider>
+//     );
+// }
+// export default App;
 
+
+
+
+
+// import React, { useContext } from "react";
+// import { AuthProvider, AuthContext } from "./Components/useContext";
+// const Status = () => {
+//     const { isLoggedIn } = useContext(AuthContext);
+//     return <h2>Status: {isLoggedIn ? "Logged in" : "Logged out"}</h2>
+// };
+// const AuthButtons = () => {
+//     const { login, logout, isLoggedIn } = useContext(AuthContext);
+//     return (
+//         <div>
+//             {!isLoggedIn && <button onClick={login}>Login</button>}
+//             {!isLoggedIn && <button onClick={logout}>Logout</button>}
+//         </div>
+//     );
+// }
+// function App() {
+//     return (
+//         <AuthProvider>
+//             <div style={{ textAlign: "center", marginTop: "50px"}}>
+//                 <Status />
+//                 <AuthButtons />
+//             </div>
+//         </AuthProvider>
+//     );
+// }
+// export default App;
+
+
+
+// import React, { useContext } from "react";
+// import { MessageProvider, MessageContext } from "./Components/useContext";
+// const Status = () => {
+//     const { ShowMessage } = useContext(MessageContext);
+//     return <h2>Message is: {ShowMessage ? "Visible" : "Hidden"}</h2>;
+// };
+// const ToggleButtons = () => {
+//     const { toggleMessage } = useContext(MessageContext);
+//     return (
+//         <div>
+//             <button onClick={toggleMessage}>Hide / Show Message</button>
+//         </div>
+//     );
+// };
+// function App() {
+//     return (
+//         <MessageProvider>
+//             <div style={{ textAlign: "center", marginTop: "50px" }}>
+//                 <Status />
+//                 <ToggleButtons />
+//             </div>
+//         </MessageProvider>
+//     );
+// }
+// export default App;
+
+
+// import React, { useContext } from "react";
+// import { UserProvider, UserContext } from "./Components/useContext";
+// const Header = () => {
+//     const {userName} = useContext(UserContext);
+//     return <h2>Welcome, {userName}</h2>
+// }
+// const Footer = () => {
+//     const {userName} = useContext(userName);
+//     return <h2>Logged in, {userName}</h2>
+// }
+// const ChangeName = () => {
+//     const {userName, setUserName} = useContext(UserContext);
+//     return (
+//         <div>
+//             <button onClick={() => setUserName(userName === "Sulthana" ? "Misriya" : "Sulthana")}>
+//                 Change Name
+//             </button>
+//         </div>
+//     );
+// }
+// function App() {
+//     return (
+//         <UserProvider>
+//             <div>
+//                 <Header />
+//                 <ChangeName />
+//                 <Footer />
+//             </div>
+//         </UserProvider>
+//     );
+// }
+// export default App;
+
+
+import React from "react";
+import TodoApp from "./Components/useReducer";
+function App() {
+    return (
+        <div>
+            <TodoApp />
+        </div>
+    )
+}
+export default App;
